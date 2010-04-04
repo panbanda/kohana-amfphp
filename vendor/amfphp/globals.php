@@ -9,8 +9,8 @@
 	list($usec, $sec) = explode(" ", microtime());
 	$amfphp['startTime'] = ((float)$usec + (float)$sec);
 	
-	$servicesPath = MODPATH . "amfphp/vendor/amfphp/services/";
-	$voPath = MODPATH . "amfphp/vendor/amfphp/services/vo/";
+	$servicesPath = Kohana::config('amfphp.services_path');
+	$voPath = MODPATH . "amfphp/services/vo/";
 	
 	//As an example of what you might want to do here, consider:
 	
