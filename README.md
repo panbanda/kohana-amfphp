@@ -39,4 +39,4 @@ Step 2: Visit http://yourdomain.com/amfphp/browser to view your AMFPHP service b
 		- JSON: http://localhost/amfphp/gateway.json/{METHOD}/{PARAM_1}/{PARAM_2}/...
 		- XML-RPC: http://localhost/amfphp/gateway.xmlrpc
 		
-	- Your service scripts go in this directory (for now, working on changing location): MODPATH/amfphp/vendor/amfphp/services/
+	- Your service scripts go in this directory "MODPATH/amfphp/services/" You can modify that directory path in the config file if you want it to sit in the application directory instead of the AMFPHP module directory. 
