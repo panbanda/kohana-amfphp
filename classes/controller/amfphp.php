@@ -11,6 +11,9 @@ class Controller_AMFPHP extends Controller
 	{
 		$service_type = Request::instance()->param('type');
 		
+		// change the content type, easy for debugging using firebug
+		Kohana::$content_type = 'application/x-amf';
+		
 		switch ($service_type)
 		{
 			case "xmlrpc":
